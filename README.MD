@@ -4,7 +4,7 @@
 Lai atvērtu .drawio failus, saglabājat tos uz jūsu datora, apmeklējat [draw.io](https://app.diagrams.net/) vietni un atverat tos tur.
 
 # Nodarbības
-## 1. Semestris: 
+## 1. Semestris
 ### 1. Python pamati, ievade, izvade
 ### 2. Saraksti, cikli
 ### 3. Atkļūdošana, cikli
@@ -14,3 +14,4 @@ Lai atvērtu .drawio failus, saglabājat tos uz jūsu datora, apmeklējat [draw.
 ### 7. Vārdnīcas
 ### 8. Vārdnīcas
 ### 9. JSON, faili
+### 10. Faili
