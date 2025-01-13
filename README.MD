@@ -19,3 +19,4 @@ Lai atvērtu .drawio failus, saglabājat tos uz jūsu datora, apmeklējat [draw.
 
 ## 2. Semestris
 ### 12. Klases
+### 13. Klases
