@@ -6,10 +6,14 @@
 
 # SQL Vaicājumi
 
-Lai atrastu doc. - Google vai citā dzinī - vaicājuma tips + sqlite, piem INSERT Sqlite
+Lai atrastu doc. - Google vai citā meklēšanas sistēmā - vaicājuma tips + sqlite, piem INSERT Sqlite
 
 * Tabulas izveide [ CREATE TABLE ]
 * Datu ievietošana [ INSERT ]
+* Datu atjaunošana [ UPDATE ]
+* Datu dzēšana [ DELETE ]
+* Datu iegūšana [ SELECT ]
+* Tabulas dzēšana [ DROP TABLE ]
 
 Komentāri:
 ```SQL
@@ -18,6 +22,7 @@ Komentāri:
 Vairāku rindu
 komentārs
 */
+-- Ja ir vairāki vaicājumi - rindu beidzam ar semikolu
 ```
 
 Tabulas izveide:
@@ -31,7 +36,7 @@ CREATE TABLE "T1" (
 
 Tabulas izveide ar foreign key:
 ```SQL
-CREATE TABLE "T2" (
+CREATE TABLE IF NOT EXISTS "T2" (
 	"T2_ID"	INTEGER NOT NULL UNIQUE,
 	"Lauks"	TEXT DEFAULT 'Standarta_vērt',
 	"T1_ID"	INTEGER,
@@ -42,12 +47,12 @@ CREATE TABLE "T2" (
 
 Insert:
 ```SQL
-INSERT INTO "T1" ( "Lauks" ) VALUES ( "Kautkada_vert2" ), ( "Kautkada_vert3" )
+INSERT INTO "T1" ( "Lauks" ) VALUES ( "Kautkada_vert2" ), ( "Kautkada_vert3" );
 ```
 
 Update:
 ```SQL
-UPDATE "T1" SET "Lauks" = "Jauna vērtība" WHERE "T1_ID" == 6
+UPDATE "T1" SET "Lauks" = "Jauna vērtība" WHERE "T1_ID" == 6;
 ```
 
 Select:
@@ -65,4 +70,4 @@ SELECT * FROM "T3" ORDER BY "Lauks2" ASC, "Lauks" ASC; -- Vairāki lauki
 SELECT * FROM "T1" ORDER BY "Lauks" DESC; -- Dilstošā secībā
 ```
 
-Nākošajā stundā -- LIMIT, GROUP BY, Joins, Unions
+Nākošajā stundā -- LIMIT, GROUP BY, DELETE, Joins, Unions
