@@ -50,3 +50,10 @@ INSERT INTO "Genre_2" SELECT GenreId, Name FROM "Genre";
 ```
 
 3. Uzdevums - Izvadīt visus rēķinus (tabula `Invoice`) klientiem (tabula `Customer`) no Brazīlijas (kolona `Country` tabulā `Customer`).
+
+```sql
+SELECT b.FirstName, b.LastName, b.Address, a.InvoiceId FROM "Customer" b
+INNER JOIN "Invoice" a
+ON a.CustomerId == b.CustomerId
+WHERE b.Country == "Brazil";
+```
