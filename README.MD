@@ -27,3 +27,4 @@ Lai atvērtu .drawio failus, saglabājat tos uz jūsu datora, apmeklējat [draw.
 ### 18. Datu bāzes (SQL)
 ### 19. Datu bāzes (SQL)
 ### 20. Datu bāzes (SQL)
+### 21. Datu bāzes (Python)
